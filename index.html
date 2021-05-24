@@ -1,210 +1,328 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-<meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
-
-<meta name="csrf-token" content="0a4LqdUUf9SCnVr6rvDuFCBuLRwp7OQkyMVuyrtc">
-<title>
-            LectorManga
-    </title>
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2957ba">
-<link rel="shortcut icon" href="/favicon/favicon.ico">
-<link rel="stylesheet" type="text/css" href="https://nakamasweb.com/css/advertising.css">
-<meta name="msapplication-TileColor" content="#2957ba">
-<meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
-<meta name="msapplication-config" content="/favicon/browserconfig.xml">
-<meta name="theme-color" content="#2957ba">
-<meta name="author" content="TuMangaOnline">
-<meta name="subject" content="Manga Online">
-
-<meta name="description" content="Tu lector de manga online">
-<meta name="keywords" content="Manga,Manhua,Leer Manga, Online">
-<meta name=”robots” content=”Index,Follow”>
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@TuMangaOnline">
-<meta name="twitter:creator" content="@TuMangaOnline">
-<meta name="twitter:title" content="        LectorManga
-    ">
-<meta name="twitter:description" content="Tu lector de manga online">
-<meta name="twitter:image" content="https://lectormanga.com/logo.png">
-<meta name="twitter:image:alt" content="        LectorManga
-    ">
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lectormanga.com">
-<meta property="og:title" content="        LectorManga
-    ">
-<meta property="og:description" content="Tu lector de manga online">
-<meta property="og:image" content="https://lectormanga.com/logo.png">
-<meta property="og:image:width" content="300">
-<meta property="og:image:height" content="450">
-<meta property="fb:app_id" content="233198240685640" />
-<meta property="og:locale" content="es_ES">
-
-<link href="/css/app.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<script async src="//adserver.nakamasweb.com/www/delivery/asyncjs.php"></script>
-
-<script type="text/javascript" async=true>
-    (function() {
-        var host = 'lectormanga.com';
-        var element = document.createElement('script');
-        var firstScript = document.getElementsByTagName('script')[0];
-        var url = 'https://quantcast.mgr.consensu.org'
-            .concat('/choice/', 'p5pLPFWZhaDH8', '/', host, '/choice.js')
-        var uspTries = 0;
-        var uspTriesLimit = 3;
-        element.async = true;
-        element.type = 'text/javascript';
-        element.src = url;
-
-        firstScript.parentNode.insertBefore(element, firstScript);
-
-        function makeStub() {
-            var TCF_LOCATOR_NAME = '__tcfapiLocator';
-            var queue = [];
-            var win = window;
-            var cmpFrame;
-
-            function addFrame() {
-                var doc = win.document;
-                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
-
-                if (!otherCMP) {
-                    if (doc.body) {
-                        var iframe = doc.createElement('iframe');
-
-                        iframe.style.cssText = 'display:none';
-                        iframe.name = TCF_LOCATOR_NAME;
-                        doc.body.appendChild(iframe);
-                    } else {
-                        setTimeout(addFrame, 5);
-                    }
-                }
-                return !otherCMP;
-            }
-
-            function tcfAPIHandler() {
-                var gdprApplies;
-                var args = arguments;
-
-                if (!args.length) {
-                    return queue;
-                } else if (args[0] === 'setGdprApplies') {
-                    if (
-                        args.length > 3 &&
-                        args[2] === 2 &&
-                        typeof args[3] === 'boolean'
-                    ) {
-                        gdprApplies = args[3];
-                        if (typeof args[2] === 'function') {
-                            args[2]('set', true);
-                        }
-                    }
-                } else if (args[0] === 'ping') {
-                    var retr = {
-                        gdprApplies: gdprApplies,
-                        cmpLoaded: false,
-                        cmpStatus: 'stub'
-                    };
-
-                    if (typeof args[2] === 'function') {
-                        args[2](retr);
-                    }
-                } else {
-                    queue.push(args);
-                }
-            }
-
-            function postMessageEventHandler(event) {
-                var msgIsString = typeof event.data === 'string';
-                var json = {};
-
-                try {
-                    if (msgIsString) {
-                        json = JSON.parse(event.data);
-                    } else {
-                        json = event.data;
-                    }
-                } catch (ignore) {}
-
-                var payload = json.__tcfapiCall;
-
-                if (payload) {
-                    window.__tcfapi(
-                        payload.command,
-                        payload.version,
-                        function(retValue, success) {
-                            var returnMsg = {
-                                __tcfapiReturn: {
-                                    returnValue: retValue,
-                                    success: success,
-                                    callId: payload.callId
-                                }
-                            };
-                            if (msgIsString) {
-                                returnMsg = JSON.stringify(returnMsg);
-                            }
-                            if (event && event.source && event.source.postMessage) {
-                                event.source.postMessage(returnMsg, '*');
-                            }
-                        },
-                        payload.parameter
-                    );
-                }
-            }
-
-            while (win) {
-                try {
-                    if (win.frames[TCF_LOCATOR_NAME]) {
-                        cmpFrame = win;
-                        break;
-                    }
-                } catch (ignore) {}
-
-                if (win === window.top) {
-                    break;
-                }
-                win = win.parent;
-            }
-            if (!cmpFrame) {
-                addFrame();
-                win.__tcfapi = tcfAPIHandler;
-                win.addEventListener('message', postMessageEventHandler, false);
-            }
-        };
-
-        makeStub();
-
-        var uspStubFunction = function() {
-            var arg = arguments;
-            if (typeof window.__uspapi !== uspStubFunction) {
-                setTimeout(function() {
-                    if (typeof window.__uspapi !== 'undefined') {
-                        window.__uspapi.apply(window.__uspapi, arg);
-                    }
-                }, 500);
-            }
-        };
-
-        var checkIfUspIsReady = function() {
-            uspTries++;
-            if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-                console.warn('USP is not accessible');
-            } else {
-                clearInterval(uspInterval);
-            }
-        };
-
-        if (typeof window.__uspapi === 'undefined') {
-            window.__uspapi = uspStubFunction;
-            var uspInterval = setInterval(checkIfUspIsReady, 6000);
-        }
-    })();
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5"
+    },
+    "button": {
+      "background": "#2B3A69"
+    }
+  }
+})});
 </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Og:image" content="http://www.freeplantillas.com/images/ogimage.png" />
+<meta name="title" content="descargar plantillas" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<title>Ejemplo de Pagina</title>
+
+
+</script>
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/sendScreenResolution.js"></script>
+<script type="text/javascript" src="/js/showContent.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/layout.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/homeAjax.css" />
+</head>
+<body id="page_9">
+<div class="main">
+<!--===========================header========================= -->
+	<div id="header">
+		<div class="indent column"><img src="/images/spacer.gif" width="1" height="1" alt="" /></div>
+		<div class="left column">
+
+			<div id="logo" style="position:absolute;z-index:1">
+						<a href="/"><img alt="templates logo gratis" src="/images/web-templates-es.gif" /></a><!--img src="/images/web-templates-es.gif" alt="Templates logos gratis" /-->
+						</div>
+			<div id="tag_cloud" style="position:absolute;z-index:2;top:0px; width:700px; height:111px;text-align:right;">
+												
+			</div>
+			
+		</div>	
+		<div class="right column">
+
+			<form id="hd_form" action=""  style="float:right" method="POST">
+				<div class="bg">
+					<div class="lt column"><input type="text" name="keywords[keyword]" id="search" onChange="document.getElementById('searchi').focus();"/></div>
+					<div class="column"><!--a href="javascript:void(0)" onclick="document.getElementById('hd_form').action=unescape('%2f%73%65%61%72%63%68%2f%73%75%62%6d%69%74');document.getElementById('hd_form').submit()" id="searchi"><img src="/images/hd_form_sub.jpg" alt=""  /></a-->
+					<input  type="image" border="0" onclick="document.getElementById('hd_form').action=unescape('%2f%73%65%61%72%63%68%2f%73%75%62%6d%69%74');document.getElementById('hd_form').submit()" src="/images/hd_form_sub.jpg" class="imginput">
+					</div>
+				</div>
+			</form>
+			<script language="javascript">
+
+   			document.getElementById('search').focus();
+			</script>
+		</div>
+		<div class="clear"></div>
+	</div>
+<!--===========================header========================= -->	
+<!--===========================menu========================= -->
+<div id="menu">
+	<!--<a class="" href="/">Inicio</a> <img src="/images/p2.gif" alt="menu" />-->
+<a class="nodecoration" href="/">Templates</a> <img src="/images/p2.gif" alt="menu" />
+<a class="" href="/plantillas-flash-gratis.htm">Templates gratis</a> <img src="/images/p2.gif" alt="menu" />
+<a class="" href="/plantillas-css-gratis.htm">PSD Templates</a> <img src="/images/p2.gif" alt="menu" />
+<a class="" href="/flash-animation/">Intro templates</a> <img src="/images/p2.gif" alt="menu" />
+<a class="" href="/plantillas-web/">Templates de pago</a>  <img src="/images/p2.gif" alt="menu" />
+ <!--img src="/images/p2.gif" alt="menu" /-->
+
+<a class="" href="/contact">Contacto</a><br />	
+</div>
+<!--==========================//menu======================== -->
+<!--===========================content========================= -->
+<div id="content">	
+	
+	﻿
+
+<div class="col_1">
+<div style="text-align:center">
+ <!--a href="https://plus.google.com/share?url=http://www.freeplantillas.com" ><img src="/images/googleplus.png" alt="templates Google+" style="cursor: pointer;"  /></a-->
+ <a href="#" onclick="popUp=window.open('https://plus.google.com/share?url=freeplantillas.com', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><img src="/images/googleplus.png" alt="templates Google+" style="cursor: pointer;"  /></a>
+  <a href="#" onclick="popUp=window.open('http://www.facebook.com/sharer/sharer.php?u=freeplantillas.com&title=templates', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><img src="/images/facebook.png" alt="templates facebook" style="cursor: pointer;" id = "share_button" />
+</div>
+<div style="text-align:center">
+<script type="text/javascript">addthis_pub  = 'marketwirenet';addthis_options         = ' twitter,blogger, google,delicious, digg,  facebook, fark, furl,  live, myweb, myspace, newsvine, reddit, slashdot, stumbleupon, technorati, twitter, more';</script>
+<a href="/" onMouseOver="return addthis_open(this, '', 'http://www.freeplantillas.com', 'templates')" onMouseOut="addthis_close()" onClick="return addthis_sendto()" ><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Free Flash Templates Bookmark Button" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js">
+</script>
+</div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Adaptable -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5670591097589805"
+     data-ad-slot="6476992776"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div style="text-align:center;padding-top:10px;">
+		</div>
+</div>
+<div class="mid"><img src="/images/spacer.gif" width="1" height="1" alt="" /></div>
+<div class="col_2">
+	<div class="block_2">
+		<div class="bot">
+			<div class="left_b">
+				<div class="right_b">
+					<div class="left_top">
+						<div class="right_top">
+							<div class="left_bot">
+								<div class="right_bot_2">
+									<div class="indent">
+							  	<h1 class="bluebgd">Templates gratis</h1>Bienvenidos a nuestro sitio Internet. Este último tiene para vocación de proponer templates (responsive html 5 plantillas y flash web plantillas) de sitio Web para decargar gratuitamente. El diseño de estos últimos es ya integrado en forma de páginas web, entonces usted sólo tiene que modificarlos para su sitio Web este dispuesto a ser puesto en línea. También puede <a href="https://lamusicagratis.com">descargar música de fondo gratis</a> para su página web <a href="https://lamusicagratis.com/catalogo-de-musica">aquí</a>.							    											
+									</div>												
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+
+<div class="dynamicContent" id="dynamicContent">
+	<div style="text-align:center;margin:30px 0px 0px 0px;">
+		<p style="text-align:center">Por favor, espera durante el cargamiento del template gratuito</p>
+		<img style="margin:20px 0px 20px 0px" src="/images/ajax-loader.gif" alt="Ajax-loader" />	</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+
+</div>
+<!--==========================//content======================== -->
+<!-- Adaptable -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5670591097589805"
+     data-ad-slot="6476992776"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!--===========================footer========================= -->
+	<div id="footer">
+		<div class="line"></div>
+		<div class="paddmarg">
+			<div class="copy">&copy; 2021 freeplantillas.com  - 
+					  				
+				<a href="/about-us.htm">Acerca de nosotros</a> <img src="/images/p3.gif" alt="" /> <a href="/terms-of-use.htm">Derechos de uso</a> <img src="/images/p3.gif" alt="menu" /> <a href="/guestbook">Libro de oro</a>				
+												
+				<br/>
+						
+			</div>
+			
+		</div>
+	</div>
+<!--==========================//footer======================== -->
+	
+<!--==========================footer2======================== -->
+﻿
+<div id="footer2">
+		Categorías de templates flash :
+	<div class="overflowpbie6">
+		<div class="col1">
+			<ul>
+				 
+						<li><a href="/plantillas-flash/3D.htm">3d</a></li>
+				 
+						<li><a href="/plantillas-flash/agricultura.htm">Agricultura</a></li>
+				 
+						<li><a href="/plantillas-flash/ajedrez.htm">Ajedrez</a></li>
+				 
+						<li><a href="/plantillas-flash/animales.htm">Animales</a></li>
+				 
+						<li><a href="/plantillas-flash/arquitectura.htm">Arquitectura</a></li>
+				 
+						<li><a href="/plantillas-flash/arte-musica-pintura.htm">Arte (música, pintura...)</a></li>
+				 
+						<li><a href="/plantillas-flash/avion.htm">Avión</a></li>
+				 
+						<li><a href="/plantillas-flash/belleza.htm">Belleza / mujeres</a></li>
+				 
+						<li><a href="/plantillas-flash/blog.htm">Blog</a></li>
+				 
+						<li><a href="/plantillas-flash/matrimonio.htm">Bodas</a></li>
+				 
+						<li><a href="/plantillas-flash/buceo.htm">Buceo</a></li>
+				 
+						<li><a href="/plantillas-flash/business.htm">Business</a></li>
+				 
+						<li><a href="/plantillas-flash/beisbol.htm">Béisbol</a></li>
+				 
+						<li><a href="/plantillas-flash/caballo.htm">Caballo</a></li>
+				 
+						<li><a href="/plantillas-flash/caridad.htm">Caridad</a></li>
+				 
+						<li><a href="/plantillas-flash/online-casino.htm">Casino</a></li>
+				 
+						<li><a href="/plantillas-flash/club.htm">Club</a></li>
+				 
+						<li><a href="/plantillas-flash/coches.htm">Coches</a></li>
+				 
+						<li><a href="/plantillas-flash/computadora.htm">Computadora</a></li>
+				 
+						<li><a href="/plantillas-flash/comunicacion.htm">Comunicación</a></li>
+				 
+						<li><a href="/plantillas-flash/consulting.htm">Consulting</a></li>
+				 
+						<li><a href="/plantillas-flash/contratacion.htm">Contratación</a></li>
+				 
+						<li><a href="/plantillas-flash/css.htm">Css</a></li>
+				 
+						<li><a href="/plantillas-flash/cuerpo-humano.htm">Cuerpo humano</a></li>
+							</ul>
+	  </div>
+		<div class="col2">
+			<ul>
+										<li><a href="/plantillas-flash/dating-meeting.htm">Dating</a></li>
+										<li><a href="/plantillas-flash/deporte.htm">Deporte</a></li>
+										<li><a href="/plantillas-flash/derecho-justicia.htm">Derecho / justicia</a></li>
+										<li><a href="/plantillas-flash/diario.htm">Diario</a></li>
+										<li><a href="/plantillas-flash/dj-discoteca.htm">Discoteca</a></li>
+										<li><a href="/plantillas-flash/drupal.htm">Drupal</a></li>
+										<li><a href="/plantillas-flash/educacion.htm">Educación</a></li>
+										<li><a href="/plantillas-flash/educacion-escuela.htm">Educación / escuela</a></li>
+										<li><a href="/plantillas-flash/empleo.htm">Empleo</a></li>
+										<li><a href="/plantillas-flash/energia-limpia.htm">Energía limpia</a></li>
+										<li><a href="/plantillas-flash/eventos.htm">Eventos</a></li>
+										<li><a href="/plantillas-flash/eolico.htm">Eólico</a></li>
+										<li><a href="/plantillas-flash/familia.htm">Familia</a></li>
+										<li><a href="/plantillas-flash/farmacia.htm">Farmacia</a></li>
+										<li><a href="/plantillas-flash/fiesta.htm">Fiesta</a></li>
+										<li><a href="/plantillas-flash/flash.htm">Flash</a></li>
+										<li><a href="/plantillas-flash/flor.htm">Flor</a></li>
+										<li><a href="/plantillas-flash/forum.htm">Forum</a></li>
+										<li><a href="/plantillas-flash/phpbb.htm">Forum</a></li>
+										<li><a href="/plantillas-flash/fotografia-foto.htm">Fotografía</a></li>
+										<li><a href="/plantillas-flash/fotografo.htm">Fotógrafo</a></li>
+										<li><a href="/plantillas-flash/futbol.htm">Fútbol</a></li>
+										<li><a href="/plantillas-flash/golf.htm">Golf</a></li>
+										<li><a href="/plantillas-flash/hosting-web.htm">Hosting web</a></li>
+							</ul>			
+	  </div>
+		<div class="col3">
+			<ul>
+										<li><a href="/plantillas-flash/hotel.htm">Hotel</a></li>
+										<li><a href="/plantillas-flash/htlm.htm">Html</a></li>
+										<li><a href="/plantillas-flash/industria.htm">Industría</a></li>
+										<li><a href="/plantillas-flash/informatica-computadora.htm">Informática / computadora</a></li>
+										<li><a href="/plantillas-flash/inmobiliario.htm">Inmobiliario</a></li>
+										<li><a href="/plantillas-flash/intros.htm">Intros</a></li>
+										<li><a href="/plantillas-flash/iphone.htm">Iphone</a></li>
+										<li><a href="/plantillas-flash/joomla.htm">Joomla</a></li>
+										<li><a href="/plantillas-flash/joyas-joyeria.htm">Joyas / joyería</a></li>
+										<li><a href="/plantillas-flash/juegos-games-gaming.htm">Juegos</a></li>
+										<li><a href="/plantillas-flash/libro-de-visitas.htm">Libro de visitas</a></li>
+										<li><a href="/plantillas-flash/libros.htm">Libros</a></li>
+										<li><a href="/plantillas-flash/mambo.htm">Mambo</a></li>
+										<li><a href="/plantillas-flash/manga.htm">Manga</a></li>
+										<li><a href="/plantillas-flash/maquillaje.htm">Maquillaje</a></li>
+										<li><a href="/plantillas-flash/medio.htm">Media</a></li>
+										<li><a href="/plantillas-flash/medical.htm">Medical</a></li>
+										<li><a href="/plantillas-flash/militar.htm">Militar / guerra</a></li>
+										<li><a href="/plantillas-flash/moda.htm">Moda</a></li>
+										<li><a href="/plantillas-flash/mujer-sexy.htm">Mujer sexy</a></li>
+										<li><a href="/plantillas-flash/musica.htm">Música</a></li>
+										<li><a href="/plantillas-flash/oscommerce.htm">Oscommerce</a></li>
+										<li><a href="/plantillas-flash/peluqueria.htm">Peluquería</a></li>
+										<li><a href="/plantillas-flash/peliculas.htm">Películas</a></li>
+							</ul>
+	  </div>
+		<div class="col4">
+			<ul>
+										<li><a href="/plantillas-flash/personal-website.htm">Personal</a></li>
+										<li><a href="/plantillas-flash/pesca.htm">Pesca</a></li>
+										<li><a href="/plantillas-flash/pizzeria.htm">Pizzería</a></li>
+										<li><a href="/plantillas-flash/poker.htm">Poker</a></li>
+										<li><a href="/plantillas-flash/portal.htm">Portal</a></li>
+										<li><a href="/plantillas-flash/portfolio.htm">Portfolio</a></li>
+										<li><a href="/plantillas-flash/radio.htm">Radio</a></li>
+										<li><a href="/plantillas-flash/reciclaje.htm">Reciclaje</a></li>
+										<li><a href="/plantillas-flash/religion-iglesia.htm">Religión / iglesia</a></li>
+										<li><a href="/plantillas-flash/restaurante.htm">Restaurante</a></li>
+										<li><a href="/plantillas-flash/salud.htm">Salud</a></li>
+										<li><a href="/plantillas-flash/sanvalentin.htm">San valentín</a></li>
+										<li><a href="/plantillas-flash/seguridad.htm">Seguridad</a></li>
+										<li><a href="/plantillas-flash/software.htm">Software</a></li>
+										<li><a href="/plantillas-flash/surf.htm">Surf</a></li>
+										<li><a href="/plantillas-flash/telefono-celular.htm">Teléfono celular</a></li>
+										<li><a href="/plantillas-flash/viaje.htm">Viaje</a></li>
+										<li><a href="/plantillas-flash/videncia-esoterismo.htm">Videncia / esoterismo</a></li>
+										<li><a href="/plantillas-flash/web-design.htm">Web design</a></li>
+										<li><a href="/plantillas-flash/wordpress.htm">Wordpress</a></li>
+										<li><a href="/plantillas-flash/wow.htm">Wow</a></li>
+							</ul>
+	  </div>	  	  
+	 </div> 	  
+  </div><!--==========================//footer2======================== -->
+</div>
+		<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-22740815-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	
+</body>
